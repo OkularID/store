@@ -89,6 +89,8 @@
     $('.one-carousel').addClass('owl-carousel owl-theme').owlCarousel({
       margin: 0,
       responsiveClass: true,
+      loop: true,
+      autoplay: true,
       responsive:{
         0: {
           items: 1,
@@ -105,9 +107,7 @@
         1000: {
           items: 1,
           navText: ["<img src='http://localhost/okulargood/images/arrow-left.png'>","<img src='http://localhost/okulargood/images/arrow-right.png'>"],
-          loop: true,
-          autoplay: true,
-          dots: false,
+          dots: true,
           nav: true
         }
       }
