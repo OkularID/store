@@ -1,3 +1,19 @@
+// Navbar Mobile
+$(document).ready(function() {
+  $('.bars').click(function() {
+    $(".bars").addClass("active");
+    $(".fa-times").addClass("active");
+    $(".sidenav").removeClass("slideOut");
+    $(".sidenav").addClass("slideIn");
+  })
+})
+$(document).ready(function() {
+  $('.fa-times').click(function(){
+    $(".bars").removeClass("active");
+    $(".fa-times").removeClass("active");
+    $(".sidenav").addClass("slideOut");
+  })
+})
 // ============Animation===============
   $(window).scroll(function() {
     $(".slideanim").each(function(){
